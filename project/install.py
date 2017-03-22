@@ -471,6 +471,15 @@ def install():
     ]
     install_update_module('clv_mfile', update, group_names)
 
+    # ################################################################################################################
+    #
+    # CLVsol Odoo Addons - Media File Management customizations
+    #
+    # ################################################################################################################
+
+    group_names = []
+    install_update_module('clv_mfile_mfmng', update, group_names)
+
 
 def secondsToStr(t):
 
