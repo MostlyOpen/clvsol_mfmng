@@ -478,6 +478,9 @@ def install():
     # ################################################################################################################
 
     group_names = []
+    install_update_module('clv_base_mfmng', update, group_names)
+
+    group_names = []
     install_update_module('clv_mfile_mfmng', update, group_names)
 
 
