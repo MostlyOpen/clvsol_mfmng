@@ -175,16 +175,16 @@ class MFMng(object):
         #
         # ############################################################################################
 
-        # # group_names = [
-        # #     'User (Base)',
-        # #     'Super User (Base)',
-        # #     'Annotation User (Base)',
-        # #     'Register User (Base)',
-        # #     'Log User (Base)',
-        # #     'Manager (Base)',
-        # #     'Super Manager (Base)',
-        # # ]
-        # self.install_upgrade_module('clv_base', self.upgrade_all, group_names)
+        # group_names = [
+        #     'User (Base)',
+        #     'Super User (Base)',
+        #     'Annotation User (Base)',
+        #     'Register User (Base)',
+        #     'Log User (Base)',
+        #     'Manager (Base)',
+        #     'Super Manager (Base)',
+        # ]
+        self.install_upgrade_module('clv_base', self.upgrade_all, group_names)
 
         # self.install_upgrade_module('clv_file_system', self.upgrade_all, group_names)
 
