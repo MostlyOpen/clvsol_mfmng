@@ -216,7 +216,7 @@ class MFMng(object):
 
         # self.install_upgrade_module('clv_file_system_mfmng', self.upgrade_all, group_names)
 
-        # self.install_upgrade_module('clv_global_log_mfmng', self.upgrade_all, group_names)
+        self.install_upgrade_module('clv_global_log_mfmng', self.upgrade_all, group_names)
 
         # self.install_upgrade_module('clv_global_tag_mfmng', self.upgrade_all, group_names)
 
