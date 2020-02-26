@@ -238,7 +238,7 @@ class MFMng(object):
 
         self.install_upgrade_module('clv_global_tag_sync_mfmng', self.upgrade_all, group_names)
 
-        # self.install_upgrade_module('clv_mfile_sync_mfmng', self.upgrade_all, group_names)
+        self.install_upgrade_module('clv_mfile_sync_mfmng', self.upgrade_all, group_names)
 
 
 if __name__ == '__main__':
