@@ -208,7 +208,7 @@ class MFMng(object):
 
         # ############################################################################################
         #
-        # CLVsol Odoo Addons - JCAFB customizations
+        # CLVsol Odoo Addons - MFmng customizations
         #
         # ############################################################################################
 
@@ -230,7 +230,7 @@ class MFMng(object):
 
         # ############################################################################################
         #
-        # CLVsol Odoo Addons - JCAFB customizations (External Sync)
+        # CLVsol Odoo Addons - MFmng customizations (External Sync)
         #
         # ############################################################################################
 
