@@ -84,16 +84,6 @@ class MFMng(object):
         else:
             new_module = db.module_install_upgrade(module, upgrade)
 
-        # if new_module and group_name_list != []:
-
-        #     user_name = 'Administrator'
-        #     print('\n%s%s (%s) %s' % ('--> ', module, user_name, group_name_list))
-        #     db.user_groups_setup(user_name, group_name_list)
-
-        #     user_name = 'Data Administrator'
-        #     print('\n%s%s (%s) %s' % ('--> ', module, user_name, group_name_list))
-        #     db.user_groups_setup(user_name, group_name_list)
-
         return new_module
 
     def install(self):
@@ -159,18 +149,6 @@ class MFMng(object):
 
         # ############################################################################################
         #
-        # OCA/l10n-brazil
-        #
-        # ############################################################################################
-
-        # ############################################################################################
-        #
-        # OCA/server-tools
-        #
-        # ############################################################################################
-
-        # ############################################################################################
-        #
         # CLVsol Odoo Addons
         #
         # ############################################################################################
@@ -186,25 +164,15 @@ class MFMng(object):
         # ]
         self.install_upgrade_module('clv_base', self.upgrade_all, group_names)
 
-        # self.install_upgrade_module('clv_file_system', self.upgrade_all, group_names)
-
         self.install_upgrade_module('clv_global_log', self.upgrade_all, group_names)
+
+        # self.install_upgrade_module('clv_file_system', self.upgrade_all, group_names)
 
         self.install_upgrade_module('clv_global_tag', self.upgrade_all, group_names)
 
         # self.install_upgrade_module('clv_set', self.upgrade_all, group_names)
 
         self.install_upgrade_module('clv_mfile', self.upgrade_all, group_names)
-
-        # self.install_upgrade_module('clv_processing', self.upgrade_all, group_names)
-
-        self.install_upgrade_module('clv_external_sync', self.upgrade_all, group_names)
-
-        # ############################################################################################
-        #
-        # CLVsol Odoo Addons - Brazilian Localization
-        #
-        # ############################################################################################
 
         # ############################################################################################
         #
@@ -216,29 +184,53 @@ class MFMng(object):
 
         # self.install_upgrade_module('clv_file_system_mfmng', self.upgrade_all, group_names)
 
-        self.install_upgrade_module('clv_global_log_mfmng', self.upgrade_all, group_names)
-
-        self.install_upgrade_module('clv_global_tag_mfmng', self.upgrade_all, group_names)
-
         # self.install_upgrade_module('clv_set_mfmng', self.upgrade_all, group_names)
 
         self.install_upgrade_module('clv_mfile_mfmng', self.upgrade_all, group_names)
 
-        # self.install_upgrade_module('clv_processing_mfmng', self.upgrade_all, group_names)
+        # # ############################################################################################
+        # #
+        # # CLVsol Odoo Addons - MFmng customizations (External Sync)
+        # #
+        # # ############################################################################################
 
-        self.install_upgrade_module('clv_external_sync_mfmng', self.upgrade_all, group_names)
+        # self.install_upgrade_module('clv_base_sync_mfmng', self.upgrade_all, group_names)
 
-        # ############################################################################################
-        #
-        # CLVsol Odoo Addons - MFmng customizations (External Sync)
-        #
-        # ############################################################################################
+        # # self.install_upgrade_module('clv_global_tag_sync_mfmng', self.upgrade_all, group_names)
 
-        self.install_upgrade_module('clv_base_sync_mfmng', self.upgrade_all, group_names)
+        # self.install_upgrade_module('clv_mfile_sync_mfmng', self.upgrade_all, group_names)
 
-        # self.install_upgrade_module('clv_global_tag_sync_mfmng', self.upgrade_all, group_names)
+        # # ############################################################################################
+        # #
+        # # CLVsol Odoo Addons - Process
+        # #
+        # # ############################################################################################
 
-        self.install_upgrade_module('clv_mfile_sync_mfmng', self.upgrade_all, group_names)
+        # # self.install_upgrade_module('clv_processing', self.upgrade_all, group_names)
+
+        # # ############################################################################################
+        # #
+        # # CLVsol Odoo Addons - Process - JCAFB customizations
+        # #
+        # # ############################################################################################
+
+        # # self.install_upgrade_module('clv_processing_mfmng', self.upgrade_all, group_names)
+
+        # # ############################################################################################
+        # #
+        # # CLVsol Odoo Addons - Sync
+        # #
+        # # ############################################################################################
+
+        # self.install_upgrade_module('clv_external_sync', self.upgrade_all, group_names)
+
+        # # ############################################################################################
+        # #
+        # # CLVsol Odoo Addons - Sync - JCAFB customizations
+        # #
+        # # ############################################################################################
+
+        # self.install_upgrade_module('clv_external_sync_mfmng', self.upgrade_all, group_names)
 
 
 if __name__ == '__main__':
