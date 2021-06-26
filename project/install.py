@@ -190,18 +190,6 @@ class MFMng(object):
 
         # # ############################################################################################
         # #
-        # # CLVsol Odoo Addons - MFmng customizations (External Sync)
-        # #
-        # # ############################################################################################
-
-        # self.install_upgrade_module('clv_base_sync_mfmng', self.upgrade_all, group_names)
-
-        # # self.install_upgrade_module('clv_global_tag_sync_mfmng', self.upgrade_all, group_names)
-
-        # self.install_upgrade_module('clv_mfile_sync_mfmng', self.upgrade_all, group_names)
-
-        # # ############################################################################################
-        # #
         # # CLVsol Odoo Addons - Process
         # #
         # # ############################################################################################
@@ -216,21 +204,27 @@ class MFMng(object):
 
         # # self.install_upgrade_module('clv_processing_mfmng', self.upgrade_all, group_names)
 
-        # # ############################################################################################
-        # #
-        # # CLVsol Odoo Addons - Sync
-        # #
-        # # ############################################################################################
+        # ############################################################################################
+        #
+        # CLVsol Odoo Addons - Sync
+        #
+        # ############################################################################################
 
-        # self.install_upgrade_module('clv_external_sync', self.upgrade_all, group_names)
+        self.install_upgrade_module('clv_external_sync', self.upgrade_all, group_names)
 
-        # # ############################################################################################
-        # #
-        # # CLVsol Odoo Addons - Sync - JCAFB customizations
-        # #
-        # # ############################################################################################
+        # ############################################################################################
+        #
+        # CLVsol Odoo Addons - MFmng customizations (External Sync)
+        #
+        # ############################################################################################
 
-        # self.install_upgrade_module('clv_external_sync_mfmng', self.upgrade_all, group_names)
+        self.install_upgrade_module('clv_external_sync_mfmng', self.upgrade_all, group_names)
+
+        self.install_upgrade_module('clv_base_sync_mfmng', self.upgrade_all, group_names)
+
+        self.install_upgrade_module('clv_global_tag_sync_mfmng', self.upgrade_all, group_names)
+
+        self.install_upgrade_module('clv_mfile_sync_mfmng', self.upgrade_all, group_names)
 
 
 if __name__ == '__main__':
