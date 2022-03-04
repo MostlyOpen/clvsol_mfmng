@@ -164,7 +164,7 @@ class MFMng(object):
         #     'Manager (Base)',
         #     'Super Manager (Base)',
         # ]
-        # self.install_upgrade_module('clv_base', self.upgrade_all, group_names)
+        self.install_upgrade_module('clv_base', self.upgrade_all, group_names)
 
         # self.install_upgrade_module('clv_global_log', self.upgrade_all, group_names)
 
