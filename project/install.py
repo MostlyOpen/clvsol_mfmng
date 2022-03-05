@@ -176,7 +176,7 @@ class MFMng(object):
 
         # # self.install_upgrade_module('clv_set', self.upgrade_all, group_names)
 
-        # self.install_upgrade_module('clv_mfile', self.upgrade_all, group_names)
+        self.install_upgrade_module('clv_mfile', self.upgrade_all, group_names)
 
         # ############################################################################################
         #
